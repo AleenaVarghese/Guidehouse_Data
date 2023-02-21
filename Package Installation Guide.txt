@@ -1,0 +1,15 @@
+when we install python must use check box add python into the path msg
+
+PIP Installation:
+>> python -m pip
+
+Package Installation:
+>> pip freeze > Packages.txt
+>> pip install -r Packages.txt
+
+For individual Package installation:
+>> pip3 install --user XlsxWriter --trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+#---------------------------------------------------------------------------------
+pyinstaller --onefile -w 'filename.py'
+if syntax error then try -pyinstaller --onefile -w filename.py

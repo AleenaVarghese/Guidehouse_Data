@@ -1,0 +1,20 @@
+psql -U postgres postgres
+password = Mychurch@1
+CREATE USER MyProjectUser WITH PASSWORD 'Mychurch@1';
+CREATE DATABASE MyProject;
+GRANT ALL PRIVILEGES ON DATABASE MyProject TO MyProjectUser;
+
+python manage.py makemigrations
+python manage.py migrate
+
+#For creating superuser
+python manage.py createsuperuser
+
+#For running project
+python manage.py runserver
+
+pip install django-crispy-forms
+
+http://127.0.0.1:8000/admin/
+
+https://web.microsoftstream.com/video/de803d88-1f8e-4b91-9754-94b5e9131898
